@@ -1,38 +1,161 @@
-.App {
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav div:first-child {
+  display: flex;
+  align-items: center;
+}
+
+nav div:first-child img {
+  height: 50px;
+  margin-right: 1rem;
+}
+
+nav div:first-child a {
+  font-size: 1.5rem;
+  color: #333;
+  text-decoration: none;
+}
+
+nav div:last-child {
+  display: flex;
+  align-items: center;
+}
+
+nav select {
+  margin-right: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #333;
+  background-color: #fff;
+}
+
+nav input[type="text"] {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #333;
+  background-color: #fff;
+}
+
+nav a {
+  margin-right: 1rem;
+  font-size: 1rem;
+  color: #333;
+  text-decoration: none;
+}
+
+nav button {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #333;
+  cursor: pointer;
+}
+
+nav .cart {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+  position: relative;
+  cursor: pointer;
+}
+
+nav .cart img {
+  height: 30px;
+  margin-right: 0.5rem;
+}
+
+nav .cart span {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: #333;
+  color: #fff;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search {
+  display: flex;
+  align-items: center;
+  position: relative;
+  }
+  
+  .search input[type="text"] {
+  padding-right: 30px;
+  }
+  
+  .search i {
+  position: absolute;
+  right: 10px;
+  font-size: 18px;
+  color: #888;
+  }
+  /* Footer styles */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f8f8f8;
+  padding: 20px 0;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.footer-icons {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.footer-icons a {
+  color: #666666;
+  font-size: 24px;
+  margin: 0 10px;
+  transition: color 0.3s ease-in-out;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.footer-icons a:hover {
+  color: #1abc9c;
+}
+
+footer p {
+  font-size: 14px;
+  color: #666666;
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  footer {
+    padding: 20px 0 10px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .footer-icons {
+    margin-bottom: 10px;
+  }
+
+  .footer-icons a {
+    font-size: 20px;
+    margin: 0 5px;
+  }
+
+  footer p {
+    font-size: 12px;
   }
 }
